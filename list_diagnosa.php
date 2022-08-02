@@ -30,7 +30,6 @@ $no = '';
                 $no = 1;
                 $sql_gejala = "SELECT gejala.* FROM gejala order by gejala.kd_gejala";
                 $qry_gejala = mysqli_query($koneksi,$sql_gejala);
-                $data=mysqli_fetch_array($qry_gejala);
                 while ($data=mysqli_fetch_array($qry_gejala)){?>
                 <tr>
                         <td><?php echo $no++ ?></td>
